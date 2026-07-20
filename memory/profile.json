@@ -1,0 +1,31 @@
+{
+  "topics": {
+    "ai_in_finance": {
+      "depth": "medium",
+      "format": "narrative",
+      "notes": "Focus on AI applications in finance, with an emphasis on Bridgewater and BlackRock"
+    },
+    "bridgewater": {
+      "depth": "high",
+      "format": "data-first",
+      "notes": "In-depth analysis of Bridgewater's AI system PrinciplesOS"
+    },
+    "blackrock": {
+      "depth": "medium",
+      "format": "narrative",
+      "notes": "Focus on BlackRock's Aladdin platform and its applications in risk management"
+    }
+  },
+  "thinking_style": {
+    "questioning": true,
+    "challenging_assumptions": false,
+    "brevity": false
+  },
+  "recurring_conclusions": [
+    "Bridgewater uses AI for alpha generation",
+    "BlackRock's Aladdin platform focuses on risk management"
+  ],
+  "last_updated": "2026-06-20T16:59:34.938535",
+  "exchanges_since_update": 4,
+  "total_distillations": 3
+}

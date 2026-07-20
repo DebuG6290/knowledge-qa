@@ -1,0 +1,184 @@
+======================================================================
+RAG SYSTEM TEST REPORT — POST-MEMORY (real query.py functions)
+Timestamp: 2026-06-20 17:04:33
+======================================================================
+
+── STANDALONE ──
+Score: 4/5
+  [S1] FAIL
+        Answer: Bridgewater uses AI primarily for alpha generation — finding trades that beat the market.
+        Tokens: 568
+  [S2] PASS
+        Answer: Ray Dalio founded Bridgewater Associates in 1975.
+        Tokens: 613
+  [S3] PASS
+        Answer: Vanguard uses AI in client services, specifically in their virtual assistant that handles 90% of rou
+        Tokens: 554
+  [S4] PASS
+        Answer: BlackRock's AI platform called Aladdin monitors risk across over 21,000 investment portfolios global
+        Tokens: 635
+  [S5] PASS
+        Answer: JPMorgan uses AI across various business units, including investment banking, trading, risk manageme
+        Tokens: 560
+
+── FOLLOW-UP SEQUENCE ──
+Score: 3/6
+  [F1] FAIL
+        Answer: Bridgewater uses AI primarily for alpha generation — finding trades that beat the market.
+        Tokens: 568
+  [F2] PASS
+        Answer: The context does not provide a clear distinction between Bridgewater's and BlackRock's AI approaches
+        Rewritten: What makes Bridgewater's use of AI for alpha generation distinct from BlackRock's?
+        Tokens: 858
+  [F3] PASS
+        Answer: Vanguard deployed AI in client services, and their virtual assistant handles 90% of routine client q
+        Tokens: 581
+  [F4] FAIL
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -2.97)
+        Rewritten: What distinguishes Vanguard's long-term sustainability from BlackRock's?
+  [F5] PASS
+        Answer: Ray Dalio founded Bridgewater Associates in 1975.
+        Rewritten: Who founded Bridgewater?
+        Tokens: 859
+  [F6] FAIL
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -4.17)
+        Rewritten: What factors led experts to conclude that Bridgewater's approach becomes arbitraged away?
+
+── PRONOUN HELL ──
+Score: 4/6
+  [P1] PASS
+        Answer: Bridgewater uses a proprietary AI system called PrinciplesOS that codifies Ray Dalio's investment pr
+        Tokens: 608
+  [P2] PASS
+        Answer: Bridgewater uses a proprietary AI system called PrinciplesOS that codifies Ray Dalio's investment pr
+        Rewritten: What is Bridgewater's investment strategy?
+        Tokens: 814
+  [P3] FAIL
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -10.88
+        Rewritten: What led to the development of PrinciplesOS?
+  [P4] PASS
+        Answer: Bridgewater uses its proprietary AI system, PrinciplesOS, to process macroeconomic indicators, curre
+        Rewritten: What is the effect of codifying Ray Dalio's investment principles into decision-making algorithms wi
+        Tokens: 750
+  [P5] PASS
+        Answer: Yes, Bridgewater's use of PrinciplesOS had notable effects on its investment strategies. According t
+        Rewritten: Did Bridgewater's use of PrinciplesOS have any notable effects on its investment strategies?
+        Tokens: 890
+  [P6] FAIL
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -6.52)
+        Rewritten: Which effects on its investment strategies were notable?
+
+── CROSS-DOCUMENT ──
+Score: 0/2
+  [C1] FAIL
+        Answer: I don't have relevant information in the knowledge base to answer that.
+        Tokens: 612
+  [C2] FAIL
+        Answer: I don't have relevant information in the knowledge base to answer that.
+        Tokens: 572
+
+── NEGATION ──
+Score: 1/2
+  [N1] FAIL
+        Answer: I don't have relevant information in the knowledge base to answer that.
+        Tokens: 605
+  [N2] PASS
+        Answer: Vanguard. They use AI primarily for operational efficiency and client service, rather than trading o
+        Tokens: 572
+
+── SUPERLATIVES ──
+Score: 1/2
+  [SU1] PASS
+        Answer: BlackRock manages $10 trillion in assets.
+        Tokens: 559
+  [SU2] FAIL
+        Answer: I don't have relevant information in the knowledge base to answer that.
+        Tokens: 567
+
+── ABSENT INFO ──
+Score: 4/4
+  [A1] PASS
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -3.35)
+  [A2] PASS
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -3.87)
+  [A3] PASS
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -10.97
+  [A4] PASS
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -10.46
+
+── CONTRADICTORY ──
+Score: 3/3
+  [CO1] PASS
+        Answer: Ray Dalio founded Bridgewater Associates in 1975.
+        Tokens: 613
+  [CO2] PASS
+        Answer: Ray Dalio.
+        Rewritten: Who actually founded Bridgewater Associates?
+        Tokens: 762
+  [CO3] PASS
+        Answer: Ray Dalio.
+        Tokens: 587
+
+── AMBIGUOUS REFERENT ──
+Score: 3/3
+  [AM1] PASS
+        Answer: BlackRock and Bridgewater use different primary focuses for their AI approaches. BlackRock uses its 
+        Tokens: 609
+  [AM2] PASS
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -6.17)
+  [AM3] PASS
+        Answer: BlackRock uses more data since Aladdin processes 250 million calculations per day while Bridgewater'
+        Rewritten: Which of BlackRock and Bridgewater uses more data?
+        Tokens: 1024
+
+── TOPIC BLEED ──
+Score: 1/2
+  [TB1] FAIL
+        Answer: Bridgewater uses a proprietary AI system called PrinciplesOS that codifies Ray Dalio's investment pr
+        Tokens: 711
+  [TB2] PASS
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -9.11)
+
+── EDGE CASES ──
+Score: 5/5
+  [E1] HANDLED
+  [E2] HANDLED
+  [E3] HANDLED
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -9.68)
+  [E4] HANDLED
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -5.01)
+  [E5] HANDLED
+
+── TEMPORAL ──
+Score: 1/1
+  [T1] PASS
+        Answer: BlackRock's Aladdin platform came before Bridgewater's PrinciplesOS.
+        Tokens: 709
+
+── MEMORY & RECALL ──
+Score: 5/5
+  [M1] PASS
+        Answer: Based on our past conversation, you concluded that the single biggest risk to Bridgewater's strategy
+        Route: conversations
+  [M2] PASS
+        Answer: You mentioned two different statements about what sets Vanguard apart from other investment manageme
+        Route: conversations
+  [M3] PASS
+        Answer: Yes, your statement matches the article. You mentioned that Vanguard uses AI primarily in client ser
+        Route: conversations
+  [M4] PASS
+        Answer: I don't have relevant information in the knowledge base to answer that. (top relevance score: -10.97
+        Route: knowledge
+  [M5] PASS
+        Note: Known ceiling (Part 14): may over-refuse despite sufficient retrieved context
+        Answer: I don't have relevant information in the knowledge base to answer that.
+        Route: knowledge
+        Tokens: 752
+
+======================================================================
+SUMMARY
+Total PASS: 35
+Total FAIL: 11
+Overall: 35/46
+Total tokens consumed this run: 18112
+======================================================================

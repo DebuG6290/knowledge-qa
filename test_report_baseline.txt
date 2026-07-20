@@ -1,0 +1,406 @@
+============================================================
+  STANDALONE QUESTIONS
+============================================================
+
+[S1] What is Bridgewater's AI strategy?
+     Answer: Bridgewater's AI strategy is focused on alpha generation - finding trades that beat the market, as codified in their proprietary system called Princip...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'PrinciplesOS': True, 'Ray Dalio': False, 'trade': True}
+     Source hit: True | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:502 output:31 total:533
+     Time: 55.7s | Result: FAIL
+
+[S2] Who founded Bridgewater?
+     Answer: Ray Dalio founded Bridgewater Associates in 1975....
+     Sources: ['asset_management', 'a16z_ai', 'marcus_aurelius']
+     Keywords: {'Ray Dalio': True, '1975': True}
+     Source hit: True | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:552 output:13 total:565
+     Time: 28.0s | Result: PASS
+
+[S3] What does Vanguard use AI for?
+     Answer: According to the text, Vanguard uses AI for client services, specifically through a virtual assistant that handles 90% of routine client queries witho...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'client': True, 'virtual assistant': True}
+     Source hit: True | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:480 output:31 total:511
+     Time: 42.8s | Result: PASS
+
+[S4] What is BlackRock's Aladdin system?
+     Answer: BlackRock's Aladdin system is an AI platform that monitors risk across over 21,000 investment portfolios globally. It processes 250 million calculatio...
+     Sources: ['asset_management', 'a16z_ai', 'marcus_aurelius']
+     Keywords: {'risk': True, 'BlackRock': True, 'Aladdin': True}
+     Source hit: True | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:549 output:41 total:590
+     Time: 45.9s | Result: PASS
+
+[S5] How does JPMorgan use AI?
+     Answer: According to the text, JPMorgan uses AI in several areas:
+
+1. Investment banking: to analyze legal documents with Contract Intelligence (COiN), extrac...
+     Sources: ['article', 'a16z_ai', 'asset_management']
+     Keywords: {'JPMorgan': True}
+     Source hit: True | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:381 output:112 total:493
+     Time: 41.6s | Result: PASS
+
+============================================================
+  FOLLOW-UP SEQUENCE
+============================================================
+
+[F1] What is Bridgewater's AI strategy?
+     Answer: Bridgewater uses its proprietary AI system called PrinciplesOS, which codifies Ray Dalio's investment principles into decision-making algorithms. The ...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'PrinciplesOS': True, 'Ray Dalio': True}
+     Rewrite check: [] → None
+     Tokens — rewriter:0 prompt:502 output:58
+     Time: 44.6s | Result: PASS
+
+[F2] How is that different from BlackRock?
+     Rewritten: What distinguishes Bridgewater's AI strategy from those employed by BlackRock?
+     Answer: According to the text, Bridgewater uses its AI system (PrinciplesOS) primarily for alpha generation - finding trades that beat the market. In contrast...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'BlackRock': True, 'Bridgewater': True}
+     Rewrite check: ['Bridgewater', 'BlackRock'] → True
+     Tokens — rewriter:129 prompt:509 output:55
+     Time: 43.1s | Result: PASS
+
+[F3] What about Vanguard?
+     Rewritten: Does Vanguard use artificial intelligence in its investment strategy?
+     Answer: No, Vanguard does not use AI for trading or risk management. According to the text, Vanguard has taken a different approach entirely and uses AI only ...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'Vanguard': True, 'client': True}
+     Rewrite check: ['Vanguard'] → True
+     Tokens — rewriter:177 prompt:483 output:55
+     Time: 40.4s | Result: PASS
+
+[F4] Which of these three is most sustainable long term and why?
+     Rewritten: What is the most sustainable approach to investment management among Bridgewater, BlackRock, and Vanguard in the long-te
+     Answer: According to the text, experts argue that the most sustainable long-term advantage will come from operational efficiency, not alpha generation. This s...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'Vanguard': True, 'sustainable': True}
+     Rewrite check: ['Bridgewater', 'BlackRock', 'Vanguard'] → True
+     Tokens — rewriter:198 prompt:517 output:66
+     Time: 46.0s | Result: PASS
+
+[F5] Going back to Bridgewater, who founded it?
+     Rewritten: What was Bridgewater founded by?
+     Answer: Bridgewater Associates, the world's largest hedge fund, was founded by Ray Dalio in 1975....
+     Sources: ['asset_management', 'a16z_ai', 'marcus_aurelius']
+     Keywords: {'Ray Dalio': True, '1975': True}
+     Rewrite check: ['Bridgewater'] → True
+     Tokens — rewriter:174 prompt:550 output:24
+     Time: 41.6s | Result: PASS
+
+[F6] Why did experts say that approach gets arbitraged away?
+     Rewritten: Experts argue that operational efficiency is most sustainable long-term and get arbitraged away.
+     Answer: Yes, experts believe that the most sustainable long-term advantage in asset management will come from operational efficiency, as alpha generation stra...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'arbitraged': True, 'alpha': True}
+     Rewrite check: ['alpha', 'Bridgewater'] → False
+     Tokens — rewriter:173 prompt:350 output:39
+     Time: 29.9s | Result: FAIL
+
+============================================================
+  PRONOUN HELL SEQUENCE
+============================================================
+
+[P1] What is Bridgewater's investment strategy?
+     Answer: Bridgewater uses a proprietary AI system called PrinciplesOS that codifies Ray Dalio's investment principles into decision-making algorithms. The syst...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'Bridgewater': True}
+     Rewrite check: [] → None
+     Tokens — rewriter:0 prompt:502 output:58
+     Time: 42.1s | Result: PASS
+
+[P2] How did they develop it?
+     Rewritten: What was the process of creating Bridgewater's proprietary AI system called PrinciplesOS?
+     Answer: The text does not provide information on how Bridgewater created its proprietary AI system called PrinciplesOS. It only mentions that the system codif...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'Bridgewater': True, 'PrinciplesOS': True}
+     Rewrite check: ['Bridgewater'] → True
+     Tokens — rewriter:127 prompt:549 output:59
+     Time: 46.5s | Result: PASS
+
+[P3] Who was behind that decision?
+     Rewritten: What were the individuals responsible for developing Bridgewater's proprietary AI system called PrinciplesOS?
+     Answer: Unfortunately, this context does not provide information on who specifically developed Bridgewater's proprietary AI system called PrinciplesOS. It onl...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'Ray Dalio': True}
+     Rewrite check: ['Bridgewater', 'Ray Dalio'] → False
+     Tokens — rewriter:176 prompt:330 output:73
+     Time: 32.0s | Result: FAIL
+
+[P4] Did it work?
+     Rewritten: Does the proprietary AI system codified by Bridgewater successfully implement its investment principles?
+     Answer: The text doesn't directly answer whether Bridgewater's proprietary AI system, PrinciplesOS, successfully implements its investment principles. However...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'Bridgewater': True, 'PrinciplesOS': True}
+     Rewrite check: ['Bridgewater', 'PrinciplesOS'] → False
+     Tokens — rewriter:174 prompt:410 output:83
+     Time: 39.1s | Result: FAIL
+
+[P5] What did critics say about it?
+     Rewritten: What were criticisms of PrinciplesOS?
+     Answer: This text does not appear to be a critique or criticism of "PrinciplesOS", as there is no mention of such a thing. However, it seems to be an extract ...
+     Sources: ['marcus_aurelius']
+     Keywords: {'Bridgewater': False}
+     Rewrite check: ['Bridgewater'] → False
+     Tokens — rewriter:164 prompt:565 output:183
+     Time: 64.9s | Result: FAIL
+
+[P6] Why did they persist anyway?
+     Rewritten: Did persistence continue despite challenges?
+     Answer: No, the passage does not provide information on whether persistence continued despite challenges. The text is actually from a philosophical dialogue a...
+     Sources: ['asset_management', 'article', 'a16z_ai', 'marcus_aurelius']
+     Keywords: {'Bridgewater': False}
+     Rewrite check: ['Bridgewater'] → False
+     Tokens — rewriter:174 prompt:473 output:53
+     Time: 44.5s | Result: FAIL
+
+============================================================
+  CROSS-DOCUMENT SYNTHESIS
+============================================================
+
+[C1] How does the AI technique Bridgewater uses relate to how neural networks actuall
+     NOTE: Requires combining asset_management + a16z_ai — tests 2 chunk limit
+     Answer: Based on the context provided, we can infer that Bridgewater's AI system, PrinciplesOS, is likely based on traditional machine learning techniques rat...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'Bridgewater': True, 'neural': True}
+     Source hit: True | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:549 output:246 total:795
+     Time: 75.9s | Result: PASS
+
+[C2] What Marcus Aurelius principle best applies to BlackRock's risk management appro
+     NOTE: Cross-domain synthesis — finance + philosophy
+     Answer: There is no mention of Marcus Aurelius in the provided context. The question appears to be a reference to the author of the Meditations, but there is ...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'BlackRock': True, 'risk': True}
+     Source hit: True | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:509 output:67 total:576
+     Time: 27.5s | Result: PASS
+
+============================================================
+  NEGATION QUESTIONS
+============================================================
+
+[N1] What does Bridgewater NOT use AI for?
+     NOTE: Negation — vectors bad at NOT queries
+     Answer: According to the text, Vanguard uses AI primarily for client services, specifically for their virtual assistant that handles 90% of routine client que...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'Bridgewater': True}
+     Source hit: None | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:542 output:66 total:608
+     Time: 31.9s | Result: PASS
+
+[N2] Which firm does not focus on alpha generation?
+     NOTE: Negation with comparison
+     Answer: Vanguard is the firm that does not focus on alpha generation. Instead, they use AI in client services to handle routine client queries, with a focus o...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'Vanguard': True}
+     Source hit: None | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:503 output:35 total:538
+     Time: 43.3s | Result: PASS
+
+============================================================
+  SUPERLATIVE + COMPARISON
+============================================================
+
+[SU1] Which firm manages the most assets?
+     NOTE: Requires reading and comparing numbers across chunks
+     Answer: BlackRock manages $10 trillion in assets....
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'BlackRock': True, 'trillion': True}
+     Source hit: None | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:501 output:10 total:511
+     Time: 36.9s | Result: PASS
+
+[SU2] What is the biggest risk across all three firms?
+     NOTE: Superlative + synthesis
+     Answer: The biggest risk across all three firms is regulatory scrutiny. The SEC has proposed new rules requiring firms to disclose AI-driven investment decisi...
+     Sources: ['asset_management', 'article', 'marcus_aurelius']
+     Keywords: {'risk': True}
+     Source hit: None | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:504 output:29 total:533
+     Time: 8.1s | Result: PASS
+
+============================================================
+  ABSENT INFORMATION
+============================================================
+
+[A1] What is BlackRock's revenue in 2023?
+     NOTE: Not in knowledge base — should express uncertainty
+     Answer: There is no information provided in the text about BlackRock's revenue for 2023. The text only discusses BlackRock's use of an AI platform called Alad...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {}
+     Source hit: None | Forbidden clean: True
+     Uncertainty expressed: True
+     Tokens — prompt:505 output:53 total:558
+     Time: 10.9s | Result: PASS
+
+[A2] How many engineers work on PrinciplesOS?
+     NOTE: Specific detail not in knowledge base
+     Answer: There is no information provided about the number of engineers working on PrinciplesOS in the given context....
+     Sources: ['asset_management', 'article', 'marcus_aurelius', 'a16z_ai']
+     Keywords: {}
+     Source hit: None | Forbidden clean: True
+     Uncertainty expressed: True
+     Tokens — prompt:321 output:20 total:341
+     Time: 8.0s | Result: PASS
+
+[A3] What is the capital of France?
+     NOTE: Completely out of scope
+     Answer: There is no mention of the capital of France in the provided text. The text appears to be discussing AI systems used by large asset management firms s...
+     Sources: ['asset_management', 'a16z_ai', 'marcus_aurelius']
+     Keywords: {}
+     Source hit: None | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:550 output:60 total:610
+     Time: 29.3s | Result: FAIL
+
+[A4] Who is Virat Kohli?
+     NOTE: Completely out of scope
+     Answer: There is no mention of Virat Kohli in the provided text. The text appears to be a passage from Epictetus' work "Discourses" or "Enchiridion", discussi...
+     Sources: ['marcus_aurelius']
+     Keywords: {}
+     Source hit: None | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:558 output:90 total:648
+     Time: 50.8s | Result: FAIL
+
+============================================================
+  CONTRADICTORY INJECTION
+============================================================
+
+[CO1] Who founded Bridgewater?
+     Answer: Ray Dalio founded Bridgewater Associates in 1975....
+     Sources: ['asset_management', 'a16z_ai', 'marcus_aurelius']
+     Keywords: {'Ray Dalio': True}
+     Rewrite check: [] → None
+     Tokens — rewriter:0 prompt:552 output:13
+     Time: 42.2s | Result: PASS
+
+[CO2] Actually I read it was founded by John Smith in 1980
+     NOTE: False injection — should trust knowledge base not user
+     Rewritten: Who founded Bridgewater Associates in 1980?
+     Answer: There is no mention of the year 1980 in the provided context. The text states that Bridgewater Associates was founded by Ray Dalio in 1975....
+     Sources: ['asset_management', 'article', 'marcus_aurelius']
+     Keywords: {'Ray Dalio': True}
+     Rewrite check: [] → None
+     Tokens — rewriter:105 prompt:504 output:34
+     Time: 39.7s | Result: PASS
+
+[CO3] So who actually founded Bridgewater?
+     NOTE: After false injection — does it recover?
+     Rewritten: What person founded Bridgewater?
+     Answer: Ray Dalio founded Bridgewater Associates in 1975....
+     Sources: ['asset_management', 'marcus_aurelius']
+     Keywords: {'Ray Dalio': True}
+     Rewrite check: [] → None
+     Tokens — rewriter:144 prompt:549 output:13
+     Time: 41.6s | Result: PASS
+
+============================================================
+  AMBIGUOUS REFERENTS
+============================================================
+
+[AM1] Compare BlackRock and Bridgewater's AI approaches
+     Answer: BlackRock and Bridgewater have distinct AI approaches:
+
+BlackRock uses an AI platform called Aladdin for risk management, which monitors over 21,000 i...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'BlackRock': True, 'Bridgewater': True}
+     Rewrite check: [] → None
+     Tokens — rewriter:0 prompt:503 output:136
+     Time: 35.4s | Result: PASS
+
+[AM2] Which one uses more data?
+     NOTE: Ambiguous 'one' — could be either firm
+     Rewritten: How much data does BlackRock's Aladdin platform use compared to Bridgewater?
+     Answer: BlackRock's Aladdin platform processes 250 million calculations per day. In comparison, Bridgewater's PrinciplesOS system is not explicitly mentioned ...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'BlackRock': True, 'Bridgewater': True}
+     Rewrite check: ['BlackRock', 'Bridgewater'] → True
+     Tokens — rewriter:135 prompt:549 output:90
+     Time: 50.5s | Result: PASS
+
+[AM3] Does it have more employees?
+     NOTE: Ambiguous 'it' after ambiguous 'one'
+     Rewritten: Does Bridgewater have more employees than BlackRock?
+     Answer: No, the text does not provide explicit information about the number of employees at each firm. However, based on the fact that Vanguard manages $8 tri...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {}
+     Rewrite check: ['BlackRock', 'Bridgewater'] → True
+     Tokens — rewriter:177 prompt:323 output:68
+     Time: 31.3s | Result: PASS
+
+============================================================
+  TOPIC BLEED
+============================================================
+
+[TB1] What principles guide Bridgewater's decision making?
+     NOTE: Semantic collision — 'principles' hits Marcus Aurelius too
+     Answer: Bridgewater Associates' proprietary AI system, PrinciplesOS, codifies Ray Dalio's investment principles into decision-making algorithms....
+     Sources: ['asset_management', 'article', 'marcus_aurelius']
+     Keywords: {'Ray Dalio': True, 'PrinciplesOS': True}
+     Source hit: True | Forbidden clean: False
+     Uncertainty expressed: False
+     Tokens — prompt:553 output:26 total:579
+     Time: 25.5s | Result: FAIL
+
+[TB2] How should one approach adversity according to the texts?
+     NOTE: Should pull philosophy, not finance
+     Answer: According to the text, one should approach adversity with a calm and level head, focusing on reason rather than emotions. The author suggests that one...
+     Sources: ['marcus_aurelius']
+     Keywords: {}
+     Source hit: True | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:549 output:176 total:725
+     Time: 109.8s | Result: PASS
+
+============================================================
+  EDGE CASES
+============================================================
+
+[E1] Input: '' | NOTE: Empty input
+     Result: HANDLED — empty input detected before query
+
+[E2] Input: '?' | NOTE: Just punctuation
+     Answer: It appears that this text is a part of a philosophical or rhetorical treatise. Based on the context provided, it seems that the speaker is reflecting 
+     Uncertainty: False
+
+[E3] Input: 'asdfjkl;' | NOTE: Gibberish
+     Answer: It looks like you accidentally pasted some random characters into the chat. There's no relevant text there to answer a question based on. Please feel 
+     Uncertainty: False
+
+[E4] Input: 'What?' | NOTE: Single word follow-up
+     Answer: It appears that there is no clear question being asked in this passage. The text seems to be a collection of fragments from the writings of Epictetus,
+     Uncertainty: False
+
+[E5] Input: '   ' | NOTE: Whitespace only
+     Result: HANDLED — empty input detected before query
+
+============================================================
+  TEMPORAL REASONING
+============================================================
+
+[T1] Which AI initiative came first, BlackRock's Aladdin or Bridgewater's PrinciplesO
+     NOTE: Temporal comparison — system has no time concept
+     Answer: The text doesn't provide a specific timeline for when each AI system was developed, but it mentions that Bridgewater Associates was founded in 1975 an...
+     Sources: ['asset_management', 'article', 'a16z_ai']
+     Keywords: {'BlackRock': True, 'Bridgewater': True}
+     Source hit: None | Forbidden clean: True
+     Uncertainty expressed: False
+     Tokens — prompt:512 output:102 total:614
+     Time: 48.7s | Result: PASS

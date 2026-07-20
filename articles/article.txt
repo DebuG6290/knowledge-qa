@@ -1,0 +1,13 @@
+**How JPMorgan Uses AI Across Its Business**
+
+JPMorgan Chase is one of the most aggressive adopters of artificial intelligence among global banks. The firm spends over $15 billion annually on technology, with AI embedded across nearly every business unit.
+
+In investment banking, JPMorgan uses a tool called COiN (Contract Intelligence) that analyzes legal documents and extracts key data points in seconds — a task that previously took lawyers 360,000 hours annually. This is one of the clearest examples of AI creating measurable operational leverage in financial services.
+
+In trading, the bank uses AI for execution algorithms that optimize order routing based on market microstructure signals. These systems process millions of data points per second and adjust strategies in real time, something no human trader can replicate at scale.
+
+In risk management, AI models monitor transactions continuously for fraud and anomalous behavior. The system flags suspicious patterns across millions of daily transactions with far greater accuracy than rule-based systems.
+
+In securities services — which includes custody, fund administration, and clearing — AI is being used to automate exception handling. When a trade fails to settle, AI systems can now identify the cause and in many cases resolve it without human intervention, dramatically reducing operational risk.
+
+JPMorgan has also invested heavily in AI governance. Every AI model deployed internally goes through a model risk management review, ensuring that automated decisions can be explained, audited, and challenged.

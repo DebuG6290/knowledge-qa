@@ -1,0 +1,227 @@
+======================================================================
+RAG SYSTEM TEST REPORT — BASELINE (Pre-Memory)
+Timestamp: 2026-06-20 15:53:36
+======================================================================
+
+── STANDALONE ──
+Score: 4/5
+  [S1] FAIL
+        Answer: Bridgewater's AI strategy is primarily focused on alpha generation, which means finding trades that ...
+        Tokens: 552
+  [S2] PASS
+        Answer: Ray Dalio founded Bridgewater Associates in 1975....
+        Tokens: 565
+  [S3] PASS
+        Answer: Vanguard uses AI for client services, specifically with their virtual assistant which handles 90% of...
+        Tokens: 518
+  [S4] PASS
+        Answer: According to the context, BlackRock's Aladdin system is an AI platform that monitors risk across ove...
+        Tokens: 625
+  [S5] PASS
+        Answer: JPMorgan uses AI across various business units, including:
+
+1. Investment banking: to analyze legal ...
+        Tokens: 488
+
+── FOLLOW-UP SEQUENCE ──
+Score: 5/6
+  [F1] PASS
+        Answer: Bridgewater uses an AI system called PrinciplesOS that codifies Ray Dalio's investment principles in...
+        Tokens: 560
+  [F2] PASS
+        Answer: According to the text, the key difference between Bridgewater's AI strategy (PrinciplesOS) and Black...
+        Rewritten: What are the key differences between Bridgewater's AI strategy, based on PrinciplesOS, and BlackRock
+        Tokens: 718
+  [F3] PASS
+        Answer: Vanguard's investment strategy differs from those of Bridgewater and BlackRock in that it uses AI pr...
+        Rewritten: How does Vanguard's investment strategy differ from those of Bridgewater and BlackRock?
+        Tokens: 789
+  [F4] PASS
+        Answer: According to the text, experts argue that the most sustainable long-term advantage will come from op...
+        Rewritten: Which investment strategy among Bridgewater's AI-driven alpha generation, BlackRock's approach, and 
+        Tokens: 804
+  [F5] PASS
+        Answer: Ray Dalio founded Bridgewater Associates in 1975....
+        Rewritten: Who founded Bridgewater?
+        Tokens: 734
+  [F6] FAIL
+        Answer: The text states that experts argue that operational efficiency will generate the most sustainable lo...
+        Rewritten: "According to which text, what is the reason why operational efficiency generates long-term advantag
+        Tokens: 639
+
+── PRONOUN HELL ──
+Score: 1/6
+  [P1] PASS
+        Answer: Bridgewater uses a proprietary AI system called PrinciplesOS that codifies Ray Dalio's investment pr...
+        Tokens: 560
+  [P2] FAIL
+        Answer: The methodology used to create and codify Ray Dalio's investment principles into decision-making alg...
+        Rewritten: What methodology was used to create and codify Ray Dalio's investment principles into decision-makin
+        Tokens: 708
+  [P3] FAIL
+        Answer: The question does not specify the individual(s) responsible for making a particular investment strat...
+        Rewritten: What were the individuals responsible for making that particular investment strategy?
+        Tokens: 732
+  [P4] FAIL
+        Answer: The text does not directly evaluate the success of the decision-making algorithm based on Principles...
+        Rewritten: Was the decision-making algorithm based on PrinciplesOS successful?
+        Tokens: 622
+  [P5] FAIL
+        Answer: There is no mention of "PrinciplesOS" in the provided context. The text only discusses challenges to...
+        Rewritten: Were negative opinions expressed by experts regarding the effectiveness of the algorithm based on Pr
+        Tokens: 488
+  [P6] FAIL
+        Answer: The passage doesn't explicitly state why persistence continued despite challenges to AI adoption in ...
+        Rewritten: Why did persistence continue despite challenges to AI adoption in asset management?
+        Tokens: 751
+
+── CROSS-DOCUMENT ──
+Score: 1/2
+  [C1] PASS
+        Note: Requires combining asset_management + a16z_ai — tests 2 chunk limit
+        Answer: Based on the context provided, it appears that Bridgewater's proprietary AI system, PrinciplesOS, co...
+        Tokens: 771
+  [C2] FAIL
+        Note: Cross-domain synthesis — finance + philosophy
+        Answer: There is no mention of Marcus Aurelius principles in the provided text. The text only discusses AI s...
+        Tokens: 559
+
+── NEGATION ──
+Score: 2/2
+  [N1] PASS
+        Note: Negation — vectors bad at NOT queries
+        Answer: According to the text, Bridgewater uses AI primarily for alpha generation (finding trades that beat ...
+        Tokens: 597
+  [N2] PASS
+        Note: Negation with comparison
+        Answer: Vanguard is the firm that does not focus on alpha generation. Instead, they use AI in client service...
+        Tokens: 543
+
+── SUPERLATIVES ──
+Score: 2/2
+  [SU1] PASS
+        Note: Requires reading and comparing numbers across chunks
+        Answer: BlackRock manages $10 trillion in assets, which is more than Bridgewater's $150 billion and Vanguard...
+        Tokens: 528
+  [SU2] PASS
+        Note: Superlative + synthesis
+        Answer: According to the text, the biggest risk across all three firms (Bridgewater, BlackRock, and Vanguard...
+        Tokens: 569
+
+── ABSENT INFO ──
+Score: 2/4
+  [A1] PASS
+        Note: Not in knowledge base — should express uncertainty
+        Answer: There is no information provided about BlackRock's revenue for the year 2023 in the given context. T...
+        Tokens: 561
+  [A2] PASS
+        Note: Specific detail not in knowledge base
+        Answer: There is no information provided about the number of engineers working on PrinciplesOS....
+        Tokens: 337
+  [A3] FAIL
+        Note: Completely out of scope
+        Answer: There is no mention of the capital of France in the provided text. The text discusses the use of AI ...
+        Tokens: 603
+  [A4] FAIL
+        Note: Completely out of scope
+        Answer: There is no mention of Virat Kohli in the provided text. The text appears to be a passage from Epict...
+        Tokens: 626
+
+── CONTRADICTORY ──
+Score: 3/3
+  [CO1] PASS
+        Answer: According to the text, Bridgewater Associates was founded by Ray Dalio in 1975....
+        Tokens: 572
+  [CO2] PASS
+        Note: False injection — should trust knowledge base not user
+        Answer: According to the provided context, Bridgewater Associates was founded by Ray Dalio in 1975, not 1980...
+        Rewritten: Who founded Bridgewater Associates in 1980?
+        Tokens: 642
+  [CO3] PASS
+        Note: After false injection — does it recover?
+        Answer: Ray Dalio founded Bridgewater Associates in 1975....
+        Rewritten: Who founded Bridgewater?
+        Tokens: 707
+
+── AMBIGUOUS REFERENT ──
+Score: 3/3
+  [AM1] PASS
+        Answer: BlackRock and Bridgewater have distinct AI approaches:
+
+1. Focus: The key difference is that Bridgew...
+        Tokens: 678
+  [AM2] PASS
+        Note: Ambiguous 'one' — could be either firm
+        Answer: No information is provided about the amount of data used by either Bridgewater or BlackRock. The tex...
+        Rewritten: Does Bridgewater use more data than BlackRock?
+        Tokens: 713
+  [AM3] PASS
+        Note: Ambiguous 'it' after ambiguous 'one'
+        Answer: There is no mention of the size of Bridgewater's employee base in the provided text. The text only d...
+        Rewritten: Is the size of Bridgewater's employee base comparable to that of BlackRock?
+        Tokens: 815
+
+── TOPIC BLEED ──
+Score: 1/2
+  [TB1] FAIL
+        Note: Semantic collision — 'principles' hits Marcus Aurelius too
+        Answer: According to the text, Bridgewater Associates' proprietary AI system called PrinciplesOS codifies Ra...
+        Tokens: 593
+  [TB2] PASS
+        Note: Should pull philosophy, not finance
+        Answer: [OLLAMA ERROR: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)]...
+        Tokens: 0
+
+── EDGE CASES ──
+Score: 2/5
+  [E1] HANDLED
+        Note: Empty input
+  [E2] FAIL — answered confidently
+        Note: Just punctuation
+        Answer: It appears that this is a passage from Marcus Aurelius' book "Meditations". The questions that can b...
+  [E3] FAIL — answered confidently
+        Note: Gibberish
+        Answer: There is no relevant information in this context about "asdfjkl". The provided text discusses the ch...
+  [E4] FAIL — answered confidently
+        Note: Single word follow-up
+        Answer: It appears that this text is a passage from a letter or epistle, and it's not entirely clear what th...
+  [E5] HANDLED
+        Note: Whitespace only
+
+── TEMPORAL ──
+Score: 1/1
+  [T1] PASS
+        Note: Temporal comparison — system has no time concept
+        Answer: The text does not provide a specific timeline for the launch of either Aladdin or PrinciplesOS. Howe...
+        Tokens: 593
+
+── MEMORY & RECALL ──
+Score: 5/5
+  [M1] PASS
+        Answer: You didn't provide any information about yourself or your conclusions about Bridgewater in this cont...
+        Tokens: 601
+  [M2] PASS
+        Answer: You mentioned that Vanguard uses its AI system to handle 90% of routine client queries without human...
+        Tokens: 536
+  [M3] PASS
+        Answer: No, your statement does not match the article. The article discusses how Vanguard uses AI for operat...
+        Tokens: 473
+  [M4] PASS
+        Answer: There is no information provided in the text about the capital of France. The text appears to be a p...
+        Tokens: 609
+  [M5] PASS
+        Note: Known ceiling: may over-refuse despite sufficient context (Part 14)
+        Answer: No, BlackRock's approach does not match Bridgewater's. According to the text, Bridgewater uses AI pr...
+        Tokens: 607
+
+======================================================================
+SUMMARY
+======================================================================
+Total PASS: 32
+Total FAIL: 14
+Overall:    32/46
+Total tokens consumed this run: 24686
+
+KEY GAPS IDENTIFIED:
+(Review FAIL entries above — these are your pre-memory baseline failures)
+======================================================================
