@@ -12,7 +12,11 @@ Python · ChromaDB · sentence-transformers (`all-MiniLM-L6-v2`) · Ollama (`lla
 
 Fully local — no API keys, no cloud cost, runs on CPU.
 
-## Architecture
+## Architecture diagram
+
+<img width="2720" height="1920" alt="rag_memory_architecture" src="https://github.com/user-attachments/assets/1f850b64-76e7-4c45-a577-746d9bae1321" />
+
+
 
 ```
 INGEST                              QUERY
